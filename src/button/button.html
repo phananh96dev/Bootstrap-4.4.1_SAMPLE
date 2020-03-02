@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buttons</title>
+        <!-- Import CSS -->
+        <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="../../lib/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+        <!-- Import JS -->
+        <script src="../../lib/jquery/jquery-3.4.1.js"></script>
+        <script src="../../lib/jquery/jquery-3.4.1.slim.js"></script>
+        <script src="../../lib/jquery/popper.min.js"></script>
+        <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Buttons</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#button">Normal button</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#button1">Outline button</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#button2">Large-small button</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#button3">Full-Width button</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#button4">Button with icon</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="tab-content">
+                        <div id="button" class="container-fluid tab-pane active"><br>
+                            <h5>Button Styles</h5>
+                            <button type="button" class="btn">Basic</button>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                        <div id="button1" class="container-fluid tab-pane fade"><br>
+                            <h5>Button Outline</h5>
+                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                            <button type="button" class="btn btn-outline-success">Success</button>
+                            <button type="button" class="btn btn-outline-info">Info</button>
+                            <button type="button" class="btn btn-outline-warning">Warning</button>
+                            <button type="button" class="btn btn-outline-danger">Danger</button>
+                            <button type="button" class="btn btn-outline-dark">Dark</button>
+                            <button type="button" class="btn btn-outline-light text-dark">Light</button>
+                        </div>
+                        <div id="button2" class="container-fluid tab-pane fade"><br>
+                            <h5>Button Sizes</h5>
+                            <button type="button" class="btn btn-primary btn-lg">Large</button>
+                            <button type="button" class="btn btn-primary btn-md">Default</button>    
+                            <button type="button" class="btn btn-primary btn-sm">Small</button>
+                        </div>
+                        <div id="button3" class="container-fluid tab-pane fade"><br>
+                            <h5>Block Level Buttons</h5>
+                            <button type="button" class="btn btn-primary btn-block">Normal Button 1</button>
+                            <button type="button" class="btn btn-success btn-block">Normal Button 2</button>
+                            <br><br>
+                            <button type="button" class="btn btn-primary btn-sm btn-block">Small Button 1</button>
+                            <button type="button" class="btn btn-success btn-sm btn-block">Small Button 2</button>
+                            <br><br>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Large Button 1</button>
+                            <button type="button" class="btn btn-success btn-lg btn-block">Large Button 2</button>
+                        </div>
+                        <div id="button4" class="container-fluid tab-pane fade"><br>
+                            <h5>Button with font-awesome icon</h5>
+                            <h6>Small buttons</h6>
+                            <button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Thêm</button> &nbsp;
+                            <button type="button" class="btn btn-success btn-sm" title="Thêm"><i class="fa fa-plus"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link btn-sm" title="Thêm"><i class="fa fa-plus" style="color: #00b33c;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o"></i> Sửa</button> &nbsp;
+                            <button type="button" class="btn btn-primary btn-sm" title="Sửa"><i class="fa fa-pencil-square-o"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link btn-sm" title="Sửa"><i class="fa fa-pencil-square-o" style="color: #0000e6;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Xóa</button> &nbsp;
+                            <button type="button" class="btn btn-danger btn-sm" title="Xóa"><i class="fa fa-trash-o"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link btn-sm" title="Xóa"><i class="fa fa-trash-o" style="color: #cc0000;"></i></button>
+                            <br><br>
+                            <button type="button" class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Xem</button> &nbsp;
+                            <button type="button" class="btn btn-info btn-sm" title="Xem"><i class="fa fa-eye"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link btn-sm" title="Xem"><i class="fa fa-eye" style="color: #2eb8b8;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-sign-in"></i> Đăng nhập</button> &nbsp;
+                            <button type="button" class="btn btn-primary btn-sm" title="Đăng nhập"><i class="fa fa-sign-in"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link btn-sm" title="Đăng nhập"><i class="fa fa-sign-in" style="color: #0000e6;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-light btn-sm"><i class="fa fa-sign-out"></i> Đăng xuất</button> &nbsp;
+                            <button type="button" class="btn btn-light btn-sm" title="Đăng xuất"><i class="fa fa-sign-out"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link btn-sm" title="Đăng xuất"><i class="fa fa-sign-out" style="color: #334d4d;"></i></button>
+                            
+                            <br><br>
+                            <h6>Normal buttons</h6>
+                            <button type="button" class="btn btn-success"><i class="fa fa-plus"></i> Thêm</button> &nbsp;
+                            <button type="button" class="btn btn-success" title="Thêm"><i class="fa fa-plus"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link" title="Thêm"><i class="fa fa-plus fa-lg" style="color: #00b33c;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Sửa</button> &nbsp;
+                            <button type="button" class="btn btn-primary" title="Sửa"><i class="fa fa-pencil-square-o"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link" title="Sửa"><i class="fa fa-pencil-square-o fa-lg" style="color: #0000e6;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Xóa</button> &nbsp;
+                            <button type="button" class="btn btn-danger" title="Xóa"><i class="fa fa-trash-o"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link" title="Xóa"><i class="fa fa-trash-o fa-lg" style="color: #cc0000;"></i></button>
+                            <br><br>
+                            <button type="button" class="btn btn-info"><i class="fa fa-eye"></i> Xem</button> &nbsp;
+                            <button type="button" class="btn btn-info" title="Xem"><i class="fa fa-eye"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link" title="Xem"><i class="fa fa-eye fa-lg" style="color: #2eb8b8;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary"><i class="fa fa-sign-in"></i> Đăng nhập</button> &nbsp;
+                            <button type="button" class="btn btn-primary" title="Đăng nhập"><i class="fa fa-sign-in"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link" title="Đăng nhập"><i class="fa fa-sign-in fa-lg" style="color: #0000e6;"></i></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-light"><i class="fa fa-sign-out"></i> Đăng xuất</button> &nbsp;
+                            <button type="button" class="btn btn-light" title="Đăng xuất"><i class="fa fa-sign-out"></i></button> &nbsp;
+                            <button type="button" class="btn btn-link" title="Đăng xuất"><i class="fa fa-sign-out fa-lg" style="color: #334d4d;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modals</title>
+        <!-- Import CSS -->
+        <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="../../lib/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+        <!-- Import JS -->
+        <script src="../../lib/jquery/jquery-3.4.1.js"></script>
+        <script src="../../lib/jquery/jquery-3.4.1.slim.js"></script>
+        <script src="../../lib/jquery/popper.min.js"></script>
+        <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+
+        <script src="./modal.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Modals</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#item1">Insert/Edit modal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#item2">View modal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#item3">Warning/Delete modal</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="tab-content">
+                        <div id="item1" class="container-fluid tab-pane active"><br>
+                            <h4>Insert/Edit modal</h4>
+                            <div style="text-align: right;">
+                                <button class="btn btn-primary" id="modal1-sm">Small</button>
+                                <button class="btn btn-primary" id="modal1-nm">Normal</button>
+                                <button class="btn btn-primary" id="modal1-lg">Lagre</button>
+                                <button class="btn btn-primary" id="modal1-xl">Extra lagre</button>
+                            </div>
+
+                            <button type="button" class="btn btn-danger" id="btn-modal1">Open modal</button>
+                            <div class="modal fade" id="modal1">
+                                <div class="modal-dialog modal-dialog-centered" id="modal1-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title">Insert/Edit modal title</h4>
+                                            <button type="button" class="close text-light" data-dismiss="modal">x</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Modal body...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success">Accept</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="item2" class="container-fluid tab-pane fade"><br>
+                            <h4>View modal</h4>
+                            <div style="text-align: right;">
+                                <button class="btn btn-primary" id="modal2-sm">Small</button>
+                                <button class="btn btn-primary" id="modal2-nm">Normal</button>
+                                <button class="btn btn-primary" id="modal2-lg">Lagre</button>
+                                <button class="btn btn-primary" id="modal2-xl">Extra lagre</button>
+                            </div>
+
+                            <button type="button" class="btn btn-danger" id="btn-modal2">Open modal</button>
+                            <div class="modal fade" id="modal2">
+                                <div class="modal-dialog modal-dialog-centered" id="modal2-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-info">
+                                            <h4 class="modal-title">View modal title</h4>
+                                            <button type="button" class="close text-light" data-dismiss="modal">x</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Modal body...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!--button-- type="button" class="btn btn-success">Accept</!--button-->
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="item3" class="container-fluid tab-pane fade"><br>
+                            <h4>Warning/Delete modal</h4>
+
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal3">Open modal</button>
+                            <div class="modal fade" id="modal3">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h4 class="modal-title">Warning/Delete modal title</h4>
+                                            <button type="button" class="close text-light" data-dismiss="modal">x</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you want...?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger">Accept</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>
